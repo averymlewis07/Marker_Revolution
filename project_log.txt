@@ -1,0 +1,12 @@
+This is where we can keep track of tasks/other things.
+
+
+Current list of tasks:
+	1. Marker art
+	2. Factory background
+	3. Conveyor belt
+	4. Collection mechanic
+	5. Player character art+movement
+	6. Game timer
+	7. Marker counter
+	
