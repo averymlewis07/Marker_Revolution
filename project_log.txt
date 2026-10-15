@@ -6,7 +6,40 @@ Current list of tasks:
 	2. Factory background
 	3. Conveyor belt
 	4. Collection mechanic
-	5. Player character art+movement
+	5. Player character art+movement-Crayon man/Marker man
 	6. Game timer
 	7. Marker counter
-	
+	8. Game Over/Win screen
+	9. Life counter
+	10. Marker parts randomizer.
+	11. Marker objectives (collect pink, yellow, green yay)
+
+
+
+
+Steven:
+	-Conveyer belt mechanics: Tuesday?
+	-Timer
+	-Counters
+	-Game Over/Win Screen
+	-Objective marker
+
+
+
+
+
+
+Avery: 
+	-Marker art
+	-Player art: Tuesday?
+	-Player Movement
+	-Story screen at beginning
+
+
+
+
+Unassigned/joint/if we get around to it:
+	-Randomizing(?)-joint work
+	-sound/music(if we get around to it)
+	-factory
+	-conveyor art
