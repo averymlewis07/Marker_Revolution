@@ -1,3 +1,21 @@
 [gd_scene format=3 uid="uid://ju2mnlwigv3c"]
 
-[node name="RigidBody2D" type="RigidBody2D" unique_id=835454114]
+[ext_resource type="Script" uid="uid://b6swte2nf86tv" path="res://marker.gd" id="1_15koh"]
+[ext_resource type="Texture2D" uid="uid://cgcchb1ypfrom" path="res://art/newdino/thumbnail.bmp" id="2_mnpm0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xvx6h"]
+radius = 50.19608
+height = 117.55102
+
+[node name="marker" type="CharacterBody2D" unique_id=267135066]
+script = ExtResource("1_15koh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1816988839]
+position = Vector2(0.99999905, 1)
+scale = Vector2(0.796875, 0.765625)
+texture = ExtResource("2_mnpm0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1219572635]
+position = Vector2(0.99999905, 1)
+scale = Vector2(0.796875, 0.765625)
+shape = SubResource("CapsuleShape2D_xvx6h")

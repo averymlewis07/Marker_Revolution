@@ -1,21 +1,11 @@
 [gd_scene format=3 uid="uid://bjw3pjm2o7687"]
 
 [ext_resource type="Script" uid="uid://byjg0ffbsuojn" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://2ljek5fu626p" path="res://player.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bok8l54beu7da" path="res://background.tscn" id="3_h2yge"]
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_f5fhm"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5fhm"]
-size = Vector2(1155, 115)
-
-[node name="Main" type="Area2D" unique_id=1795094677]
-position = Vector2(578, 324)
+[node name="Main" type="Node2D" unique_id=1581600596]
 script = ExtResource("1_ig7tw")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1880056305]
-modulate = Color(0.7146291, 0.71462905, 0.71462905, 1)
-texture = SubResource("CanvasTexture_f5fhm")
-region_enabled = true
-region_rect = Rect2(0, 0, 1152, 648)
 
 [node name="spawner" type="Node2D" parent="." unique_id=377812589]
 
@@ -26,6 +16,10 @@ gizmo_extents = 38.2
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=119929184]
 position = Vector2(0, 62)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=615565809]
-position = Vector2(1, 201)
-shape = SubResource("RectangleShape2D_f5fhm")
+[node name="player" parent="." unique_id=1181956777 instance=ExtResource("2_0xm2m")]
+light_mask = 2
+visibility_layer = 2
+
+[node name="background" parent="." unique_id=939253055 instance=ExtResource("3_h2yge")]
+light_mask = 0
+visibility_layer = 0
