@@ -4,9 +4,9 @@ extends Node2D
 @onready var spawn_point = $Marker2D
 
 var marker_scene = [
-	preload("res://marker.tscn"),
-	preload("res://marker2.tscn"),
-	preload("res://marker3.tscn")
+	preload("res://marker_cap.tscn"),
+	preload("res://marker_ink.tscn"),
+	preload("res://marker_body.tscn")
 ]
 
 func _ready() -> void:

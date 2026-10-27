@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bbi4l6pmamy3h" path="res://art/marker_conveyor.jpg" id="1_xehqc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
-size = Vector2(1158.5, 154)
+size = Vector2(1158.5, 133)
 
 [node name="background" type="CharacterBody2D" unique_id=939253055]
 
@@ -16,8 +16,7 @@ texture = ExtResource("1_xehqc")
 region_enabled = true
 region_rect = Rect2(0, 0, 1480, 920)
 script = ExtResource("1_i7s6n")
-speed = 500.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1053216013]
-position = Vector2(583.25, 534)
+position = Vector2(583.25, 544.5)
 shape = SubResource("RectangleShape2D_0xm2m")
