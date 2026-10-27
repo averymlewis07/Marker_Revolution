@@ -7,6 +7,7 @@
 size = Vector2(389.0196, 124.08163)
 
 [node name="marker" type="CharacterBody2D" unique_id=765540308]
+z_index = 1
 script = ExtResource("1_qb1yj")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=791392359]

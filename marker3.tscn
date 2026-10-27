@@ -7,6 +7,7 @@
 size = Vector2(249.7255, 124.08163)
 
 [node name="marker" type="CharacterBody2D" unique_id=695497147]
+z_index = 1
 script = ExtResource("1_otao6")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=856342828]
