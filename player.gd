@@ -1,7 +1,8 @@
 extends CharacterBody2D
 
-const jump_velocity = -300.0
+const jump_velocity = -530.0
 @onready var sprite = $AnimatedSprite2D
+@onready var collide = $CollisionShape2D
 
 func _ready() -> void: #Start
 	sprite.play("run")
@@ -28,3 +29,5 @@ func _physics_process(delta: float) -> void:
 			sprite.play("run")
 			
 	move_and_slide()
+	
+	
