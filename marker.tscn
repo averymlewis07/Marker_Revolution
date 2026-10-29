@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://ju2mnlwigv3c"]
+[gd_scene format=3 uid="uid://bpgipji080nw"]
 
 [ext_resource type="Script" uid="uid://b6swte2nf86tv" path="res://marker.gd" id="1_15koh"]
 [ext_resource type="Texture2D" uid="uid://cgcchb1ypfrom" path="res://art/newdino/thumbnail.bmp" id="2_mnpm0"]

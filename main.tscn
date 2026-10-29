@@ -2,24 +2,31 @@
 
 [ext_resource type="Script" uid="uid://byjg0ffbsuojn" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://2ljek5fu626p" path="res://player.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://d2p5832yw8wcu" path="res://spawner.gd" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://bok8l54beu7da" path="res://background.tscn" id="3_h2yge"]
 
 [node name="Main" type="Node2D" unique_id=1581600596]
 script = ExtResource("1_ig7tw")
 
 [node name="spawner" type="Node2D" parent="." unique_id=377812589]
+script = ExtResource("2_1bvp3")
 
 [node name="Marker2D" type="Marker2D" parent="spawner" unique_id=1696173989]
-position = Vector2(718, 156)
+top_level = true
+visibility_layer = 3
+position = Vector2(1251, 492)
 gizmo_extents = 38.2
+
+[node name="SpawnTimer" type="Timer" parent="spawner" unique_id=1672502309]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=119929184]
 position = Vector2(0, 62)
 
 [node name="player" parent="." unique_id=1181956777 instance=ExtResource("2_0xm2m")]
 light_mask = 2
-visibility_layer = 2
+visibility_layer = 512
+z_index = 1
+position = Vector2(17, 374)
 
 [node name="background" parent="." unique_id=939253055 instance=ExtResource("3_h2yge")]
 light_mask = 0
-visibility_layer = 0

@@ -1,6 +1,6 @@
-extends CharacterBody2D
+extends Sprite2D
 
-@export var speed := 150.0
+@export var speed := 500.0
 
 func _process(delta: float) -> void:
-	pass
+	region_rect.position.x += speed * delta

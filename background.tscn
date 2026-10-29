@@ -1,18 +1,22 @@
 [gd_scene format=3 uid="uid://bok8l54beu7da"]
 
 [ext_resource type="Script" uid="uid://bhs8wuxdoi1n0" path="res://background.gd" id="1_i7s6n"]
-[ext_resource type="Texture2D" uid="uid://cgcchb1ypfrom" path="res://art/newdino/thumbnail.bmp" id="1_oabld"]
+[ext_resource type="Texture2D" uid="uid://bbi4l6pmamy3h" path="res://art/marker_conveyor.jpg" id="1_xehqc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
-size = Vector2(1153, 84)
+size = Vector2(1158.5, 133)
 
 [node name="background" type="CharacterBody2D" unique_id=939253055]
-script = ExtResource("1_i7s6n")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1417828697]
-scale = Vector2(1155, 650)
-texture = ExtResource("1_oabld")
+texture_repeat = 2
+position = Vector2(580.5, 341.80225)
+scale = Vector2(0.76938504, 0.71514684)
+texture = ExtResource("1_xehqc")
+region_enabled = true
+region_rect = Rect2(0, 0, 1480, 920)
+script = ExtResource("1_i7s6n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1053216013]
-position = Vector2(576.5, 602)
+position = Vector2(583.25, 544.5)
 shape = SubResource("RectangleShape2D_0xm2m")

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://ju2mnlwigv3c"]
+
+[ext_resource type="Script" uid="uid://b6swte2nf86tv" path="res://marker.gd" id="1_rpeco"]
+[ext_resource type="Texture2D" uid="uid://barpjl1b2se7s" path="res://art/Marker Cap - Red.png" id="2_oh40d"]
+[ext_resource type="Script" uid="uid://ca25glfu8ayr4" path="res://marker_cap.gd" id="3_oh40d"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xvx6h"]
+radius = 50.19608
+height = 117.55102
+
+[node name="marker" type="CharacterBody2D" unique_id=267135066]
+script = ExtResource("1_rpeco")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1816988839]
+z_index = 1
+position = Vector2(10.000011, 221)
+scale = Vector2(0.46944448, 0.4889236)
+texture = ExtResource("2_oh40d")
+script = ExtResource("3_oh40d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1219572635]
+z_index = 1
+position = Vector2(0.99999905, 1)
+scale = Vector2(0.796875, 0.765625)
+shape = SubResource("CapsuleShape2D_xvx6h")
