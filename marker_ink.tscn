@@ -1,27 +1,24 @@
 [gd_scene format=3 uid="uid://ba3f5s7o7h0sl"]
 
 [ext_resource type="Script" uid="uid://b6swte2nf86tv" path="res://marker.gd" id="1_otao6"]
-[ext_resource type="Texture2D" uid="uid://cgcchb1ypfrom" path="res://art/newdino/thumbnail.bmp" id="2_uka0m"]
+[ext_resource type="Texture2D" uid="uid://cfb6rl4ftol74" path="res://art/Marker Ink - Black.png" id="2_qtl5a"]
+[ext_resource type="Script" uid="uid://cawvk6yuvdy0a" path="res://marker_ink.gd" id="3_yrw5v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xvx6h"]
-size = Vector2(249.7255, 124.08163)
+size = Vector2(249.7255, 222.0408)
 
-[node name="marker" type="CharacterBody2D" unique_id=695497147]
+[node name="marker2" type="CharacterBody2D" unique_id=695497147]
 z_index = 1
 script = ExtResource("1_otao6")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=856342828]
-position = Vector2(0.99999905, 1)
-scale = Vector2(0.796875, 0.765625)
-texture = ExtResource("2_uka0m")
+position = Vector2(102, -16)
+scale = Vector2(0.40888888, 0.38111112)
+texture = ExtResource("2_qtl5a")
+script = ExtResource("3_yrw5v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1783650138]
 z_index = 1
-position = Vector2(51.5, 0.5000019)
+position = Vector2(51.5, -37)
 scale = Vector2(0.796875, 0.765625)
 shape = SubResource("RectangleShape2D_xvx6h")
-
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=148444097]
-position = Vector2(102.00001, 1)
-scale = Vector2(0.796875, 0.765625)
-texture = ExtResource("2_uka0m")
