@@ -24,6 +24,7 @@ visible = false
 position = Vector2(0, 62)
 
 [node name="player" parent="." unique_id=1181956777 instance=ExtResource("2_0xm2m")]
+unique_name_in_owner = true
 light_mask = 2
 visibility_layer = 512
 z_index = 1

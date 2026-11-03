@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b6swte2nf86tv" path="res://marker.gd" id="1_otao6"]
 [ext_resource type="Texture2D" uid="uid://cfb6rl4ftol74" path="res://art/Marker Ink - Black.png" id="2_qtl5a"]
 [ext_resource type="Script" uid="uid://cawvk6yuvdy0a" path="res://marker_ink.gd" id="3_yrw5v"]
+[ext_resource type="Script" uid="uid://bley887tjl0m4" path="res://marker_collision.gd" id="4_fqeb5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xvx6h"]
 size = Vector2(249.7255, 222.0408)
@@ -17,8 +18,13 @@ scale = Vector2(0.40888888, 0.38111112)
 texture = ExtResource("2_qtl5a")
 script = ExtResource("3_yrw5v")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1783650138]
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=411085082]
+script = ExtResource("4_fqeb5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1783650138]
 z_index = 1
 position = Vector2(51.5, -37)
 scale = Vector2(0.796875, 0.765625)
 shape = SubResource("RectangleShape2D_xvx6h")
+
+[connection signal="body_entered" from="RigidBody2D" to="RigidBody2D" method="_on_body_entered"]
