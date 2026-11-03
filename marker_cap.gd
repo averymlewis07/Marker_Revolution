@@ -1,6 +1,5 @@
 extends Sprite2D
 
-
 @export var color_options = [
 	
 	preload("res://art/Marker Cap - Black.png"),
@@ -11,3 +10,5 @@ extends Sprite2D
 
 func _ready() -> void:
 	texture = color_options.pick_random()
+	
+	

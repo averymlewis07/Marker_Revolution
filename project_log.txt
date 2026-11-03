@@ -18,9 +18,8 @@ Current list of tasks:
 
 
 Steven:
-	-Conveyer belt mechanics: Tuesday?
 	-Timer
-	-Counters
+	-Counters 
 	-Game Over/Win Screen
 	-Objective marker
 
