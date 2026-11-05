@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const jump_velocity = -530.0
+const jump_velocity = -650.0
 @onready var sprite = $AnimatedSprite2D
 @onready var collide = $CollisionShape2D
 
