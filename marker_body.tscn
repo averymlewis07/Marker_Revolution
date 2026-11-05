@@ -3,12 +3,11 @@
 [ext_resource type="Script" uid="uid://b6swte2nf86tv" path="res://marker.gd" id="1_qb1yj"]
 [ext_resource type="Texture2D" uid="uid://clnvk0yr06lyy" path="res://art/Marker Body - Black.png" id="2_pt4en"]
 [ext_resource type="Script" uid="uid://yfs28u3odei6" path="res://marker_body.gd" id="3_ddbly"]
-[ext_resource type="Script" uid="uid://bley887tjl0m4" path="res://marker_collision.gd" id="4_nibjo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xvx6h"]
 size = Vector2(100.39216, 190.69388)
 
-[node name="marker" type="CharacterBody2D" unique_id=765540308]
+[node name="marker" type="Area2D" unique_id=303798933]
 z_index = 1
 script = ExtResource("1_qb1yj")
 
@@ -18,13 +17,10 @@ scale = Vector2(0.45054942, 0.35731414)
 texture = ExtResource("2_pt4en")
 script = ExtResource("3_ddbly")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1443815388]
-position = Vector2(-3.8146973e-06, 1.9073486e-06)
-scale = Vector2(1.0000001, 1)
-script = ExtResource("4_nibjo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=393700932]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=393700932]
 z_index = 1
-position = Vector2(34, -21.000002)
-scale = Vector2(0.7968749, 0.765625)
+position = Vector2(34, -21)
+scale = Vector2(0.796875, 0.765625)
 shape = SubResource("RectangleShape2D_xvx6h")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

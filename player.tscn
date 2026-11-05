@@ -25,7 +25,10 @@ animations = [{
 "speed": 20.0
 }]
 
-[node name="player" type="CharacterBody2D" unique_id=473404753]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r56om"]
+size = Vector2(75, 336)
+
+[node name="player" type="CharacterBody2D" unique_id=1761529686]
 script = ExtResource("1_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1533293340]
@@ -40,3 +43,9 @@ position = Vector2(37.5, 38)
 scale = Vector2(3.34375, 3.375)
 sprite_frames = SubResource("SpriteFrames_xvx6h")
 animation = &"jump"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=791951039]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2095908636]
+position = Vector2(30.5, -16)
+shape = SubResource("RectangleShape2D_r56om")
