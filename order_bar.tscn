@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dninvncmdgia2"]
+
+[ext_resource type="Texture2D" uid="uid://b6xjjokarblkw" path="res://art/Marker Cap - Black (Resized).png" id="1_5d4n3"]
+[ext_resource type="Script" uid="uid://js6s6becb7mh" path="res://orderbar.gd" id="2_dxefa"]
+
+[node name="OrderBar" type="Node2D" unique_id=926547660]
+position = Vector2(81, 23)
+
+[node name="Target1" type="Sprite2D" parent="." unique_id=2121226358]
+unique_name_in_owner = true
+position = Vector2(2.0000029, 30.5)
+scale = Vector2(0.82222223, 0.7740741)
+texture = ExtResource("1_5d4n3")
+script = ExtResource("2_dxefa")
+
+[node name="Target2" type="Sprite2D" parent="." unique_id=1867841237]
+unique_name_in_owner = true
+
+[node name="Target3" type="Sprite2D" parent="." unique_id=1580622177]
+unique_name_in_owner = true
