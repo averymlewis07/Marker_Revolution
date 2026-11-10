@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dninvncmdgia2"]
 
 [ext_resource type="Texture2D" uid="uid://b6xjjokarblkw" path="res://art/Marker Cap - Black (Resized).png" id="1_5d4n3"]
-[ext_resource type="Script" uid="uid://js6s6becb7mh" path="res://orderbar.gd" id="2_dxefa"]
+[ext_resource type="Script" uid="uid://js6s6becb7mh" path="res://top_bars/orderbar.gd" id="2_dxefa"]
 
 [node name="OrderBar" type="Node2D" unique_id=926547660]
 position = Vector2(81, 23)
