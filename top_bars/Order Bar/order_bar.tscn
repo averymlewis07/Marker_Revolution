@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dninvncmdgia2"]
+
+[ext_resource type="Script" uid="uid://c4fcyhm7w8pj2" path="res://top_bars/Order Bar/order_bar.gd" id="1_tc30f"]
+[ext_resource type="Script" uid="uid://bij5wsrnpqh0f" path="res://top_bars/Order Bar/cap.gd" id="2_lr5qd"]
+[ext_resource type="Script" uid="uid://c4wgnv1hr2wfb" path="res://top_bars/Order Bar/body_order.gd" id="3_dc2vd"]
+[ext_resource type="Script" uid="uid://dcmpqrtad3rfo" path="res://top_bars/Order Bar/ink_order.gd" id="4_y5beh"]
+
+[node name="OrderBar" type="CanvasLayer" unique_id=380349431]
+script = ExtResource("1_tc30f")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=771222058]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=2135327217]
+layout_mode = 2
+
+[node name="Cap" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1997778814]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("2_lr5qd")
+
+[node name="Body" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1227474197]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("3_dc2vd")
+
+[node name="Ink" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=187640287]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("4_y5beh")

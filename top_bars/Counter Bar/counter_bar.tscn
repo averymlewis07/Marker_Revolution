@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://cscaqxhy6a8l4"]
 
-[ext_resource type="Script" uid="uid://bpa7sed5jfc3v" path="res://top_bars/counter_bar.gd" id="1_tu14t"]
+[ext_resource type="Script" uid="uid://bpa7sed5jfc3v" path="res://top_bars/Counter Bar/counter_bar.gd" id="1_tu14t"]
 [ext_resource type="Texture2D" uid="uid://ll46iajk5hxx" path="res://art/Marker Ink - Blue.png" id="2_mmo6w"]
 [ext_resource type="Texture2D" uid="uid://b6xjjokarblkw" path="res://art/Marker Cap - Black (Resized).png" id="3_bo3d5"]
 [ext_resource type="Texture2D" uid="uid://3uqa5j3q4ssx" path="res://art/Marker Ink - Green.png" id="4_61u0b"]
-[ext_resource type="Texture2D" uid="uid://bg5m0q0c4eb62" path="res://art/Marker Cap - Blue.png" id="5_ylgl8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6lc5d"]
 bg_color = Color(0.16470589, 0.6, 0.6, 1)
@@ -14,9 +13,12 @@ follow_viewport_scale = 307.383
 script = ExtResource("1_tu14t")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=754612365]
-offset_right = 807.3334
-offset_bottom = 479.0
+offset_left = 707.0
+offset_top = 41.0
+offset_right = 1004.0
+offset_bottom = 135.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_6lc5d")
+metadata/_edit_group_ = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=830635930]
 layout_mode = 2
@@ -36,16 +38,3 @@ expand_mode = 3
 layout_mode = 2
 texture = ExtResource("4_61u0b")
 expand_mode = 3
-
-[node name="Sprite2D" type="Sprite2D" parent="PanelContainer" unique_id=1116386580]
-position = Vector2(2558, 487)
-texture = ExtResource("3_bo3d5")
-
-[node name="Sprite2D3" type="Sprite2D" parent="PanelContainer" unique_id=673163324]
-position = Vector2(-7, 7)
-centered = false
-
-[node name="Sprite2D2" type="Sprite2D" parent="PanelContainer" unique_id=1330104316]
-position = Vector2(2898, 511)
-scale = Vector2(1, 0.98388886)
-texture = ExtResource("5_ylgl8")

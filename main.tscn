@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://2ljek5fu626p" path="res://player.tscn" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://d2p5832yw8wcu" path="res://spawner.gd" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://bok8l54beu7da" path="res://background.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cscaqxhy6a8l4" path="res://top_bars/Counter Bar/counter_bar.tscn" id="5_lquwl"]
 
 [node name="Main" type="Node2D" unique_id=1581600596]
 script = ExtResource("1_ig7tw")
@@ -35,3 +36,5 @@ light_mask = 0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=650168646]
 position = Vector2(578, 304)
+
+[node name="Counter_Bar" parent="." unique_id=577402032 instance=ExtResource("5_lquwl")]
