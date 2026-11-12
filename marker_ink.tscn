@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://cawvk6yuvdy0a" path="res://marker_ink.gd" id="3_yrw5v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xvx6h"]
-size = Vector2(168.15686, 161.95917)
+size = Vector2(127.99999, 161.95917)
 
 [node name="marker2" type="Area2D" unique_id=1209928267]
 z_index = 1
@@ -19,8 +19,9 @@ script = ExtResource("3_yrw5v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1783650138]
 z_index = 1
-position = Vector2(49.999992, -14.000002)
+position = Vector2(65.99999, -14.000002)
 scale = Vector2(0.796875, 0.765625)
 shape = SubResource("RectangleShape2D_xvx6h")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="choose_random" from="Sprite2D" to="." method="_on_sprite_2d_choose_random"]

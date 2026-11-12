@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://ikwihws20g85"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1487897938]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=433808498]
+offset_right = 1156.0
+offset_bottom = 650.0
+color = Color(0.16862746, 0.16862746, 0.16862746, 0.54901963)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=92598128]
+offset_left = -15.0
+offset_top = 8.0
+offset_right = 1135.0
+offset_bottom = 650.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=352922252]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=139230909]
+layout_mode = 2
+text = "YOU WIN"
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1883282195]
+layout_mode = 2
+text = "Restart"
+
+[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer" unique_id=2118435481]
+layout_mode = 2
+text = "Quit"
