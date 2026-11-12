@@ -4,7 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://2ljek5fu626p" path="res://player.tscn" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://d2p5832yw8wcu" path="res://spawner.gd" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://bok8l54beu7da" path="res://background.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://ba3f5s7o7h0sl" path="res://marker_ink.tscn" id="5_272bh"]
 [ext_resource type="PackedScene" uid="uid://cscaqxhy6a8l4" path="res://top_bars/Counter Bar/counter_bar.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://ju2mnlwigv3c" path="res://marker_cap.tscn" id="6_5vw27"]
+[ext_resource type="PackedScene" uid="uid://xspbgowrn2nt" path="res://marker_body.tscn" id="7_kek77"]
 
 [node name="Main" type="Node2D" unique_id=1581600596]
 script = ExtResource("1_ig7tw")
@@ -38,3 +41,9 @@ light_mask = 0
 position = Vector2(578, 304)
 
 [node name="Counter_Bar" parent="." unique_id=577402032 instance=ExtResource("5_lquwl")]
+
+[node name="marker2" parent="." unique_id=1209928267 instance=ExtResource("5_272bh")]
+
+[node name="marker" parent="." unique_id=303798933 instance=ExtResource("7_kek77")]
+
+[node name="marker3" parent="." unique_id=843589219 instance=ExtResource("6_5vw27")]
