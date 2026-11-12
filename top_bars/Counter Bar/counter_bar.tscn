@@ -6,35 +6,67 @@
 [ext_resource type="Texture2D" uid="uid://3uqa5j3q4ssx" path="res://art/Marker Ink - Green.png" id="4_61u0b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6lc5d"]
-bg_color = Color(0.16470589, 0.6, 0.6, 1)
+bg_color = Color(0.44323465, 0.46587735, 0.4809726, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.20415966, 0.20415966, 0.20415966, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tnpr2"]
+bg_color = Color(0.33621237, 0.33621237, 0.33621237, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 
 [node name="Counter_Bar" type="CanvasLayer" unique_id=577402032]
 follow_viewport_scale = 307.383
 script = ExtResource("1_tu14t")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=754612365]
-offset_left = 707.0
-offset_top = 41.0
-offset_right = 1004.0
-offset_bottom = 135.0
+offset_left = 741.0
+offset_top = 76.0
+offset_right = 1083.0
+offset_bottom = 189.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_6lc5d")
 metadata/_edit_group_ = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=830635930]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1685215725]
+[node name="Cap" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1685215725]
+unique_name_in_owner = true
 layout_mode = 2
 texture = ExtResource("2_mmo6w")
 expand_mode = 2
 stretch_mode = 4
 
-[node name="TextureRect2" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=173887049]
+[node name="Body" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=173887049]
+unique_name_in_owner = true
 layout_mode = 2
 texture = ExtResource("3_bo3d5")
 expand_mode = 3
 
-[node name="TextureRect3" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1746032564]
+[node name="Ink" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1746032564]
+unique_name_in_owner = true
 layout_mode = 2
 texture = ExtResource("4_61u0b")
 expand_mode = 3
+
+[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=344315245]
+offset_left = 741.0
+offset_top = 53.0
+offset_right = 1083.0
+offset_bottom = 76.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_tnpr2")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="PanelContainer2" unique_id=874703033]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "YOUR INVENTORY"
+horizontal_alignment = 1
+vertical_alignment = 1
