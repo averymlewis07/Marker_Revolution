@@ -1,6 +1,6 @@
 extends Sprite2D
 
-signal choose_random(choice: int)
+
 
 @export var color_options = [
 	
@@ -13,6 +13,7 @@ signal choose_random(choice: int)
 
 func _ready() -> void:
 	var random_int = random_choice()
+	GlobalScript.emit_signal("storeRandomInk", random_int)
 	var testImage: Image = color_options[random_int].get_image()
 	testImage.resize(600, 800, Image.INTERPOLATE_BILINEAR)
 	var newtexture: ImageTexture = ImageTexture.create_from_image(testImage)
@@ -21,5 +22,4 @@ func _ready() -> void:
 
 func random_choice() -> int:
 	var random_int = randi_range(0, 3)
-	choose_random.emit(random_int)
 	return random_int 

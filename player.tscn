@@ -49,3 +49,5 @@ animation = &"jump"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2095908636]
 position = Vector2(30.5, -16)
 shape = SubResource("RectangleShape2D_r56om")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

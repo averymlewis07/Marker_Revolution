@@ -6,6 +6,9 @@ const jump_velocity = -650.0
 
 func _ready() -> void: #Start
 	sprite.play("run")
+	GlobalScript.storeRandomCap.connect(printCap)
+	GlobalScript.storeRandomBody.connect(printBody)
+	GlobalScript.storeRandomInk.connect(printInk)
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
@@ -31,3 +34,21 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	
+
+
+func _on_area_2d_area_entered(area: Area2D) -> bool:
+	var temp: bool
+	temp = true
+	print(temp)
+	#print("hit")
+	return temp
+	
+	
+func printInk(test) -> int:
+	return test
+	
+func printCap(test) -> int: 
+	return test
+	
+func printBody(test) -> int:
+	return test
