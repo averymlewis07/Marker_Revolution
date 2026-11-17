@@ -17,9 +17,9 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = jump_velocity
 	elif Input.is_action_pressed("move_right"):
-		velocity.x += 5
+		velocity.x += 10
 	elif Input.is_action_pressed("move_left"):
-		velocity.x -= 5
+		velocity.x -= 10
 	else:
 		velocity.x = 0
 		
