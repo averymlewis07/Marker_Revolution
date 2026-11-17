@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://ikwihws20g85" path="res://you_win.tscn" id="10_efxa6"]
 [ext_resource type="PackedScene" uid="uid://dninvncmdgia2" path="res://top_bars/Order Bar/order_bar.tscn" id="11_efxa6"]
 [ext_resource type="AudioStream" uid="uid://bspbfwc3pfpsw" path="res://art/atlasaudio-game-game-music-576637.mp3" id="12_dg77c"]
+[ext_resource type="Texture2D" uid="uid://cn2bk01tcecu5" path="res://art/Factory2.jpg" id="13_ycdy4"]
 
 [node name="Main" type="Node2D" unique_id=1581600596]
 script = ExtResource("1_ig7tw")
@@ -65,6 +66,11 @@ visible = false
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1595942346]
 stream = ExtResource("12_dg77c")
 autoplay = true
+
+[node name="Background" type="Sprite2D" parent="." unique_id=649960120]
+position = Vector2(573.5, 240)
+scale = Vector2(2.9133663, 2.6181817)
+texture = ExtResource("13_ycdy4")
 
 [connection signal="pressed" from="GameOver/CenterContainer/VBoxContainer/Button" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="GameOver/CenterContainer/VBoxContainer/Button2" to="." method="_on_quit_pressed"]
