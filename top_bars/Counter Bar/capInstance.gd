@@ -15,9 +15,7 @@ func _ready() -> void:
 
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	self.set_process(true)
 	self.show()	
-	self.set_process(false)
 	
 func printCap(test) -> void: 
 	var myTexture := AtlasTexture.new()
