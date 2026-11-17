@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://xspbgowrn2nt" path="res://marker_body.tscn" id="7_kek77"]
 [ext_resource type="PackedScene" uid="uid://cnujylxbt8ykn" path="res://game_over.tscn" id="9_4c57u"]
 [ext_resource type="PackedScene" uid="uid://ikwihws20g85" path="res://you_win.tscn" id="10_efxa6"]
+[ext_resource type="PackedScene" uid="uid://dninvncmdgia2" path="res://top_bars/Order Bar/order_bar.tscn" id="11_efxa6"]
 
 [node name="Main" type="Node2D" unique_id=1581600596]
 script = ExtResource("1_ig7tw")
@@ -58,6 +59,8 @@ visible = false
 [node name="YouWin" parent="." unique_id=221977091 instance=ExtResource("10_efxa6")]
 unique_name_in_owner = true
 visible = false
+
+[node name="OrderBar" parent="." unique_id=380349431 instance=ExtResource("11_efxa6")]
 
 [connection signal="pressed" from="GameOver/CenterContainer/VBoxContainer/Button" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="GameOver/CenterContainer/VBoxContainer/Button2" to="." method="_on_quit_pressed"]

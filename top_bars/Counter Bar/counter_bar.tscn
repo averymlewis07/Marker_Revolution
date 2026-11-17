@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bpa7sed5jfc3v" path="res://top_bars/Counter Bar/counter_bar.gd" id="1_tu14t"]
 [ext_resource type="Texture2D" uid="uid://ll46iajk5hxx" path="res://art/Marker Ink - Blue.png" id="2_mmo6w"]
 [ext_resource type="Texture2D" uid="uid://b6xjjokarblkw" path="res://art/Marker Cap - Black (Resized).png" id="3_bo3d5"]
-[ext_resource type="Texture2D" uid="uid://3uqa5j3q4ssx" path="res://art/Marker Ink - Green.png" id="4_61u0b"]
+[ext_resource type="Texture2D" uid="uid://b0f3hg5hqutew" path="res://art/Marker Body - Red.png" id="4_csklb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6lc5d"]
 bg_color = Color(0.44323465, 0.46587735, 0.4809726, 1)
@@ -13,6 +13,14 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.20415966, 0.20415966, 0.20415966, 1)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_csklb"]
+atlas = ExtResource("2_mmo6w")
+region = Rect2(16.352753, 17.478985, 40.26581, 49.673725)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n4034"]
+atlas = ExtResource("4_csklb")
+region = Rect2(270.44836, 0, 380.3922, 1000)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tnpr2"]
 bg_color = Color(0.33621237, 0.33621237, 0.33621237, 1)
 border_width_left = 1
@@ -21,15 +29,14 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 
-[node name="Counter_Bar" type="CanvasLayer" unique_id=577402032]
-follow_viewport_scale = 307.383
+[node name="Inventory_bar" type="CanvasLayer" unique_id=577402032]
 script = ExtResource("1_tu14t")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=754612365]
-offset_left = 741.0
-offset_top = 76.0
-offset_right = 1083.0
-offset_bottom = 189.0
+offset_left = 798.0
+offset_top = 172.0
+offset_right = 1051.0
+offset_bottom = 224.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_6lc5d")
 metadata/_edit_group_ = true
 
@@ -39,8 +46,8 @@ layout_mode = 2
 [node name="Cap" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1685215725]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("2_mmo6w")
-expand_mode = 2
+texture = SubResource("AtlasTexture_csklb")
+expand_mode = 3
 stretch_mode = 4
 
 [node name="Body" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=173887049]
@@ -52,14 +59,24 @@ expand_mode = 3
 [node name="Ink" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1746032564]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("4_61u0b")
+texture = SubResource("AtlasTexture_n4034")
 expand_mode = 3
 
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1777642894]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=518650990]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
 [node name="PanelContainer2" type="PanelContainer" parent="." unique_id=344315245]
-offset_left = 741.0
-offset_top = 53.0
-offset_right = 1083.0
-offset_bottom = 76.0
+offset_left = 797.0
+offset_top = 150.0
+offset_right = 1048.0
+offset_bottom = 172.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_tnpr2")
 metadata/_edit_group_ = true
 
@@ -67,6 +84,7 @@ metadata/_edit_group_ = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
+theme_override_font_sizes/font_size = 12
 text = "YOUR INVENTORY"
 horizontal_alignment = 1
 vertical_alignment = 1

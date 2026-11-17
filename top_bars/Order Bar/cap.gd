@@ -10,3 +10,5 @@ extends TextureRect
 
 func _ready() -> void:
 	texture = color_options.pick_random()
+testImage.resize(450, 600, Image.INTERPOLATE_BILINEAR)
+	var newtexture: ImageTexture = ImageTexture.create_from_image(testImage)

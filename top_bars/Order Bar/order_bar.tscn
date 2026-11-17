@@ -2,30 +2,82 @@
 
 [ext_resource type="Script" uid="uid://c4fcyhm7w8pj2" path="res://top_bars/Order Bar/order_bar.gd" id="1_tc30f"]
 [ext_resource type="Script" uid="uid://bij5wsrnpqh0f" path="res://top_bars/Order Bar/cap.gd" id="2_lr5qd"]
+[ext_resource type="Texture2D" uid="uid://b6xjjokarblkw" path="res://art/Marker Cap - Black (Resized).png" id="2_y5beh"]
 [ext_resource type="Script" uid="uid://c4wgnv1hr2wfb" path="res://top_bars/Order Bar/body_order.gd" id="3_dc2vd"]
+[ext_resource type="Texture2D" uid="uid://cfgivebmgcqky" path="res://art/Marker Body - Blue.png" id="4_tls4l"]
 [ext_resource type="Script" uid="uid://dcmpqrtad3rfo" path="res://top_bars/Order Bar/ink_order.gd" id="4_y5beh"]
+[ext_resource type="Texture2D" uid="uid://4s2g1e3kmaiw" path="res://art/Marker Ink - Red.png" id="6_sefn2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y5beh"]
+bg_color = Color(0.44323465, 0.46587735, 0.4809726, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.20415966, 0.20415966, 0.20415966, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tls4l"]
+bg_color = Color(0.33621237, 0.33621237, 0.33621237, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 
 [node name="OrderBar" type="CanvasLayer" unique_id=380349431]
 script = ExtResource("1_tc30f")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=771222058]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 798.0
+offset_top = 61.0
+offset_right = 960.0
+offset_bottom = 115.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_y5beh")
+metadata/_edit_group_ = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=2135327217]
 layout_mode = 2
 
 [node name="Cap" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1997778814]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_y5beh")
+expand_mode = 1
+stretch_mode = 5
 script = ExtResource("2_lr5qd")
+color_options = null
 
 [node name="Body" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1227474197]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
+texture = ExtResource("4_tls4l")
+expand_mode = 1
+stretch_mode = 5
 script = ExtResource("3_dc2vd")
 
 [node name="Ink" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=187640287]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("6_sefn2")
+expand_mode = 1
+stretch_mode = 5
 script = ExtResource("4_y5beh")
+
+[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=157135626]
+offset_left = 798.0
+offset_top = 43.0
+offset_right = 960.0
+offset_bottom = 62.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_tls4l")
+
+[node name="Label" type="Label" parent="PanelContainer2" unique_id=1926371688]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "WHAT YOU NEED"
+horizontal_alignment = 1
+vertical_alignment = 1
