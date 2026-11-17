@@ -38,7 +38,6 @@ z_index = 1
 position = Vector2(17, 374)
 
 [node name="background" parent="." unique_id=939253055 instance=ExtResource("3_h2yge")]
-visible = false
 light_mask = 0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=650168646]
