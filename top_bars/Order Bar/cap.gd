@@ -8,7 +8,14 @@ extends TextureRect
 ]
 
 func _ready() -> void:
+	var random_int = random_choice()
+	GlobalScript.emit_signal("storeTargetCap", random_int)
 	var myTexture := AtlasTexture.new()
-	myTexture.atlas = color_options.pick_random()
+	myTexture.atlas = color_options[random_int]
 	myTexture.region = Rect2(784, 298, 200, 265)
 	texture = myTexture
+	
+	
+func random_choice() -> int:
+	var random_int = randi_range(0, 3)
+	return random_int 
