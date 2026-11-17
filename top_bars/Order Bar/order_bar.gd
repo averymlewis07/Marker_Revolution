@@ -26,7 +26,8 @@ extends CanvasLayer
 ]
 
 func _ready() -> void:
-	%Target1.texture = body_options.pick_random()
-	%Target2.texture = cap_options.pick_random()
-	%Target3.texture = ink_options.pick_random()
+	pass
+	#%Cap.texture = cap_options.pick_random()
+	#%Body.texture = body_options.pick_random()
+	#%Ink.texture = ink_options.pick_random()
 	

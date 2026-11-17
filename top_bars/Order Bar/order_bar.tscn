@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c4fcyhm7w8pj2" path="res://top_bars/Order Bar/order_bar.gd" id="1_tc30f"]
 [ext_resource type="Script" uid="uid://bij5wsrnpqh0f" path="res://top_bars/Order Bar/cap.gd" id="2_lr5qd"]
-[ext_resource type="Texture2D" uid="uid://b6xjjokarblkw" path="res://art/Marker Cap - Black (Resized).png" id="2_y5beh"]
+[ext_resource type="Texture2D" uid="uid://bg5m0q0c4eb62" path="res://art/Marker Cap - Blue.png" id="2_y5beh"]
 [ext_resource type="Script" uid="uid://c4wgnv1hr2wfb" path="res://top_bars/Order Bar/body_order.gd" id="3_dc2vd"]
 [ext_resource type="Texture2D" uid="uid://cfgivebmgcqky" path="res://art/Marker Body - Blue.png" id="4_tls4l"]
 [ext_resource type="Script" uid="uid://dcmpqrtad3rfo" path="res://top_bars/Order Bar/ink_order.gd" id="4_y5beh"]
@@ -15,6 +15,10 @@ border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.20415966, 0.20415966, 0.20415966, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y5beh"]
+atlas = ExtResource("2_y5beh")
+region = Rect2(783.4975, 298.68195, 199.39911, 264.4662)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tls4l"]
 bg_color = Color(0.33621237, 0.33621237, 0.33621237, 1)
@@ -43,11 +47,10 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("2_y5beh")
+texture = SubResource("AtlasTexture_y5beh")
 expand_mode = 1
 stretch_mode = 5
 script = ExtResource("2_lr5qd")
-color_options = null
 
 [node name="Body" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=1227474197]
 unique_name_in_owner = true
