@@ -8,13 +8,12 @@ extends TextureRect
 	preload("res://art/Marker Cap - Red.png")
 ]
 
-func _ready() -> void:
-	GlobalScript.storeRandomCap.connect(printCap)
-	self.hide()
 
 
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
+	GlobalScript.storeRandomCap.connect(printCap)
+	
 	self.show()	
 	
 func printCap(test) -> void: 

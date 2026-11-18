@@ -22,5 +22,5 @@ func spawn_marker():
 	start_spawn_timer()
 	
 func start_spawn_timer():
-	spawn_timer.wait_time = randf_range(3.0, 4.0)
+	spawn_timer.wait_time = randf_range(1.0, 2.0)
 	spawn_timer.start()

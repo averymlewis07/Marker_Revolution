@@ -13,8 +13,10 @@
 [ext_resource type="Script" uid="uid://do581keyyqsnm" path="res://inkInstance.gd" id="8_yaehf"]
 [ext_resource type="PackedScene" uid="uid://cnujylxbt8ykn" path="res://game_over.tscn" id="9_4c57u"]
 [ext_resource type="PackedScene" uid="uid://ikwihws20g85" path="res://you_win.tscn" id="10_efxa6"]
+[ext_resource type="Script" uid="uid://bkns0eafhbe7n" path="res://marker_ink_AREA.gd" id="10_yaehf"]
 [ext_resource type="PackedScene" uid="uid://dninvncmdgia2" path="res://top_bars/Order Bar/order_bar.tscn" id="11_efxa6"]
 [ext_resource type="AudioStream" uid="uid://bspbfwc3pfpsw" path="res://art/atlasaudio-game-game-music-576637.mp3" id="12_dg77c"]
+[ext_resource type="Script" uid="uid://dy6sv0ntothll" path="res://marker_cap_AREA.gd" id="13_074og"]
 
 [node name="Main" type="Node2D" unique_id=1581600596]
 script = ExtResource("1_ig7tw")
@@ -48,6 +50,7 @@ light_mask = 0
 position = Vector2(578, 304)
 
 [node name="Counter_Bar" parent="." unique_id=577402032 instance=ExtResource("5_lquwl")]
+script = null
 
 [node name="Cap" parent="Counter_Bar/PanelContainer/HBoxContainer" parent_id_path=PackedInt32Array(577402032, 830635930) index="0" unique_id=1685215725]
 script = ExtResource("6_vivmo")
@@ -59,10 +62,13 @@ script = ExtResource("7_2cqfq")
 script = ExtResource("8_yaehf")
 
 [node name="marker2" parent="." unique_id=1209928267 instance=ExtResource("5_272bh")]
+script = ExtResource("10_yaehf")
 
 [node name="marker" parent="." unique_id=303798933 instance=ExtResource("7_kek77")]
 
 [node name="marker3" parent="." unique_id=843589219 instance=ExtResource("6_5vw27")]
+unique_name_in_owner = true
+script = ExtResource("13_074og")
 
 [node name="GameOver" parent="." unique_id=1487897938 instance=ExtResource("9_4c57u")]
 unique_name_in_owner = true
@@ -71,6 +77,7 @@ unique_name_in_owner = true
 unique_name_in_owner = true
 
 [node name="OrderBar" parent="." unique_id=380349431 instance=ExtResource("11_efxa6")]
+script = null
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1595942346]
 stream = ExtResource("12_dg77c")
@@ -79,7 +86,12 @@ autoplay = true
 [connection signal="area_entered" from="player/Area2D" to="Counter_Bar/PanelContainer/HBoxContainer/Cap" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="player/Area2D" to="Counter_Bar/PanelContainer/HBoxContainer/Body" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="player/Area2D" to="Counter_Bar/PanelContainer/HBoxContainer/Ink" method="_on_area_2d_area_entered"]
-[connection signal="area_exited" from="player/Area2D" to="Counter_Bar/PanelContainer/HBoxContainer/Cap" method="_on_area_2d_area_exited"]
+[connection signal="area_entered" from="player/Area2D" to="marker2/Sprite2D" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="player/Area2D" to="marker/Sprite2D" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="player/Area2D" to="marker3/Sprite2D" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="marker2" to="Counter_Bar/PanelContainer/HBoxContainer/Ink" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="marker" to="Counter_Bar/PanelContainer/HBoxContainer/Body" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="marker3" to="Counter_Bar/PanelContainer/HBoxContainer/Cap" method="_on_area_2d_area_entered"]
 [connection signal="pressed" from="GameOver/CenterContainer/VBoxContainer/Button" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="GameOver/CenterContainer/VBoxContainer/Button2" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="YouWin/CenterContainer/VBoxContainer/Button" to="." method="_on_restart_pressed"]
@@ -87,6 +99,9 @@ autoplay = true
 
 [editable path="player"]
 [editable path="Counter_Bar"]
+[editable path="marker2"]
+[editable path="marker"]
+[editable path="marker3"]
 [editable path="GameOver"]
 [editable path="YouWin"]
 [editable path="OrderBar"]

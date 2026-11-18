@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://xspbgowrn2nt"]
 
-[ext_resource type="Script" uid="uid://b6swte2nf86tv" path="res://marker.gd" id="1_qb1yj"]
+[ext_resource type="Script" uid="uid://b6swte2nf86tv" path="res://marker_body_AREA.gd" id="1_qb1yj"]
 [ext_resource type="Texture2D" uid="uid://clnvk0yr06lyy" path="res://art/Marker Body - Black.png" id="2_pt4en"]
 [ext_resource type="Script" uid="uid://yfs28u3odei6" path="res://marker_body.gd" id="3_ddbly"]
 

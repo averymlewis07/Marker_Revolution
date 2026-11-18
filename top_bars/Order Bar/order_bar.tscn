@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dninvncmdgia2"]
 
 [ext_resource type="Script" uid="uid://c4fcyhm7w8pj2" path="res://top_bars/Order Bar/order_bar.gd" id="1_tc30f"]
-[ext_resource type="Script" uid="uid://bij5wsrnpqh0f" path="res://top_bars/Order Bar/cap.gd" id="2_lr5qd"]
+[ext_resource type="Script" uid="uid://bij5wsrnpqh0f" path="res://top_bars/Order Bar/cap_order.gd" id="2_lr5qd"]
 [ext_resource type="Texture2D" uid="uid://bg5m0q0c4eb62" path="res://art/Marker Cap - Blue.png" id="2_y5beh"]
 [ext_resource type="Script" uid="uid://c4wgnv1hr2wfb" path="res://top_bars/Order Bar/body_order.gd" id="3_dc2vd"]
 [ext_resource type="Texture2D" uid="uid://cfgivebmgcqky" path="res://art/Marker Body - Blue.png" id="4_tls4l"]

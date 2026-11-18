@@ -1,6 +1,6 @@
 extends Sprite2D
 
-
+var random_int = randi_range(0, 3)
 
 @export var color_options = [
 	
@@ -11,16 +11,9 @@ extends Sprite2D
 ]
 
 func _ready() -> void:
-	var random_int = random_choice()
-	GlobalScript.emit_signal("storeRandomBody", random_int)
 	var testImage: Image = color_options[random_int].get_image()
 	testImage.resize(450, 600, Image.INTERPOLATE_BILINEAR)
 	var newtexture: ImageTexture = ImageTexture.create_from_image(testImage)
 	texture = newtexture
 	
 	
-	
-func random_choice() -> int:
-	var random_int = randi_range(0, 3)
-
-	return random_int 
