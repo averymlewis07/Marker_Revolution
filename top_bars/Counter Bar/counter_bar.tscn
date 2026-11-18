@@ -11,7 +11,7 @@ border_width_left = 2
 border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
-border_color = Color(0.20415966, 0.20415966, 0.20415966, 1)
+border_color = Color(0.0004332717, 0.0004332717, 0.0004332717, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_csklb"]
 atlas = ExtResource("2_mmo6w")
@@ -23,20 +23,20 @@ region = Rect2(270.44836, 0, 380.3922, 1000)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tnpr2"]
 bg_color = Color(0.33621237, 0.33621237, 0.33621237, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
 border_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 
 [node name="Inventory_bar" type="CanvasLayer" unique_id=577402032]
 script = ExtResource("1_tu14t")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=754612365]
-offset_left = 798.0
-offset_top = 172.0
-offset_right = 1051.0
-offset_bottom = 224.0
+offset_left = 795.0
+offset_top = 166.0
+offset_right = 1048.0
+offset_bottom = 218.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_6lc5d")
 metadata/_edit_group_ = true
 
@@ -73,7 +73,7 @@ expand_mode = 1
 stretch_mode = 5
 
 [node name="PanelContainer2" type="PanelContainer" parent="." unique_id=344315245]
-offset_left = 797.0
+offset_left = 795.0
 offset_top = 150.0
 offset_right = 1048.0
 offset_bottom = 172.0
