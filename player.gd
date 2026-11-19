@@ -4,6 +4,8 @@ const jump_velocity = -650.0
 @onready var sprite = $AnimatedSprite2D
 @onready var collide = $CollisionShape2D
 
+var maxSpeed = 600
+
 func _ready() -> void: #Start
 	sprite.play("run")
 	
@@ -16,8 +18,10 @@ func _physics_process(delta: float) -> void:
 		velocity.y = jump_velocity
 	elif Input.is_action_pressed("move_right"):
 		velocity.x += 10
+		velocity.x = clamp(velocity.x, -maxSpeed, maxSpeed)
 	elif Input.is_action_pressed("move_left"):
 		velocity.x -= 10
+		velocity.x = clamp(velocity.x, -maxSpeed, maxSpeed)
 	else:
 		velocity.x = 0
 		
