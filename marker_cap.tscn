@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ju2mnlwigv3c"]
 
-[ext_resource type="Script" uid="uid://b6swte2nf86tv" path="res://marker_body_AREA.gd" id="1_rpeco"]
+[ext_resource type="Script" uid="uid://dy6sv0ntothll" path="res://marker_cap_AREA.gd" id="1_oh40d"]
 [ext_resource type="Texture2D" uid="uid://barpjl1b2se7s" path="res://art/Marker Cap - Red.png" id="2_oh40d"]
 [ext_resource type="Script" uid="uid://ca25glfu8ayr4" path="res://marker_cap.gd" id="3_oh40d"]
 
@@ -8,8 +8,8 @@
 radius = 50.19608
 height = 117.55102
 
-[node name="marker2" type="Area2D" unique_id=843589219]
-script = ExtResource("1_rpeco")
+[node name="cap" type="Area2D" unique_id=843589219]
+script = ExtResource("1_oh40d")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1816988839]
 z_index = 1

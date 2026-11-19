@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xvx6h"]
 size = Vector2(100.39216, 190.69388)
 
-[node name="marker" type="Area2D" unique_id=303798933]
+[node name="body" type="Area2D" unique_id=303798933]
 z_index = 1
 script = ExtResource("1_qb1yj")
 

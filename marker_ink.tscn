@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://ba3f5s7o7h0sl"]
 
-[ext_resource type="Script" uid="uid://b6swte2nf86tv" path="res://marker_body_AREA.gd" id="1_otao6"]
+[ext_resource type="Script" uid="uid://bkns0eafhbe7n" path="res://marker_ink_AREA.gd" id="1_yrw5v"]
 [ext_resource type="Texture2D" uid="uid://cfb6rl4ftol74" path="res://art/Marker Ink - Black.png" id="2_qtl5a"]
 [ext_resource type="Script" uid="uid://cawvk6yuvdy0a" path="res://marker_ink.gd" id="3_yrw5v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xvx6h"]
 size = Vector2(127.99999, 161.95917)
 
-[node name="marker2" type="Area2D" unique_id=1209928267]
+[node name="ink" type="Area2D" unique_id=1209928267]
 z_index = 1
-script = ExtResource("1_otao6")
+script = ExtResource("1_yrw5v")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=856342828]
 position = Vector2(102, -16)
